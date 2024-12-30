@@ -22,7 +22,7 @@
           </el-table-column>
         </el-table>
       </el-tab-pane>
-      <el-tab-pane label="Discarded" name="third">
+      <el-tab-pane label="Withdrawed" name="third">
         <el-table :data="withdrawProposals" style="width: 90%">
           <el-table-column prop="id" label="ID" width="50"></el-table-column>
           <el-table-column prop="depart" label="始发"></el-table-column>
@@ -46,6 +46,9 @@
             </template>
           </el-table-column>
         </el-table>
+      </el-tab-pane>
+      <el-tab-pane label="Paid" name="second">
+
       </el-tab-pane>
     </el-tabs>
   </div>
