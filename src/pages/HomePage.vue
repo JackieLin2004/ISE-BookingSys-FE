@@ -174,6 +174,7 @@ const payOrder = async () => {
   await axios.post(bank_url + `/api/bank/pay/${currentpid.value}/${method}`).then((resp) => {
     console.log(resp.data)
   })
+  paymentDialogVisible.value = false
 }
 
 const eventSource1 = new EventSource(customer_url + '/api/customers/waiting_proposal_subscribe/' + sessionStorage.getItem('cid'));
